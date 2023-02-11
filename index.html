@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Últimas publicações</title>
+  <link rel='icon' href='icon.svg'>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <!-- AppBar Superior -->
+
+  <div class='app-bar'>
+
+    <div class='app-bar-left'>
+
+      <a>
+        <img src="icon.svg" class="app-logo" />
+      </a>
+
+      <a href='/index.html' class='app-nav-link'>Página Inicial</a>
+      <a href='/index.html' class='app-nav-link'>Ver Publicações</a>
+
+    </div>
+
+    <div class="app-bar-right">
+      <a href='#contact' class='app-nav-link'>Entrar em contato </a>
+    </div>
+  </div>
+
+  <!-- Posts Recentes -->
+
+  <div class='recent-posts'>
+
+    <div class='recent-posts-body'>
+      <h6>CONHEÇA MAIS</h6>
+      <span>Últimas postagens</span>
+
+      <a href='/map-filter-e-reduce.html'>
+        <div class='post-preview'>
+          <div class='post-preview-text'>
+            <h6>EM AGOSTO DE 2022</h6>
+            <h4>Map, filter e reduce:</b> primeiros passos de programação funcional em JavaScript</h4>
+          </div>
+
+          <div class='post-preview-image'>
+            <img src='https://loremflickr.com/164/96?random=1' />
+          </div>
+
+        </div>
+      </a>
+
+      <a href='/um-algoritimo.html'>
+        <div class='post-preview'>
+          <div class='post-preview-text'>
+            <h6>EM SETEMBRO DE 2022</h6>
+            <h4>Um algoritmo para gerar redes de palavras</h4>
+          </div>
+
+          <div class='post-preview-image'>
+            <img src='https://loremflickr.com/164/96?random=2' />
+          </div>
+
+        </div>
+      </a>
+
+      <a href='/analise-queremos.html'>
+        <div class='post-preview'>
+          <div class='post-preview-text'>
+            <h6>EM OUTUBRO DE 2022</h6>
+            <h4>"Queremos impeachment": analisando os comentários de leitores do G1 sobre Jair Bolsonaro através de uma
+              rede</h4>
+          </div>
+
+          <div class='post-preview-image'>
+            <img src='https://loremflickr.com/164/96?random=3' />
+          </div>
+
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- Formulário -->
+
+  <div class='contact' id='contact'>
+
+    <div class='form-title'>
+      <h2>Entrar em contato</h2>
+    </div>
+
+    <div class='form'>
+
+      <form method='post' action="https://getform.io/f/1ca01eb9-e467-488d-b2d2-f0df74c0f2df">
+
+        <input type="hidden" name="_gotcha" style="display:none !important">
+
+        <div>
+          <input required type="text" id='name' name='name' placeholder="nome" />
+        </div>
+
+        <div>
+          <input required type='tel' id='phone' name='phone' placeholder="telefone" />
+        </div>
+
+        <div>
+          <input required type='email' id='email' name='email' placeholder="e-mail" />
+        </div>
+
+        <div>
+          <textarea required name='message' id='message' name='message'
+            placeholder="escreva sua mensagem aqui..."></textarea>
+        </div>
+
+        <div class='submit'>
+          <input type='submit' id='submit' placeholder="enviar" />
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+
+  <footer>
+    <div>
+      <h6>Blog desenvolvido durante o bootcamp Full Stack Infnet utilizando apenas HTML e CSS puro.</h6>
+    </div>
+  </footer>
+</body>
+
+</html>

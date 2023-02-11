@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Post Blog</title>
+  <link rel='icon' href='icon.svg'>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <!-- AppBar Superior -->
+
+  <div class='app-bar'>
+
+    <div class='app-bar-left'>
+
+      <a>
+        <img src="icon.svg" class="app-logo" />
+      </a>
+
+      <a href='/index.html' class='app-nav-link'>Página Inicial</a>
+      <a href='/index.html' class='app-nav-link'>Ver Publicações</a>
+
+    </div>
+
+    <div class="app-bar-right">
+      <a href='./index.html#contact' class='app-nav-link'>Entrar em contato </a>
+    </div>
+  </div>
+
+
+
+
+  <!-- Começo do cabeçalho -->
+
+  <div class='post-header'>
+    <spam>Pesquisa</spam>
+    <spam>Análise de Conteúdo</spam>
+    <spam>Rede de Palavras</spam>
+    <h1><b>"Queremos impeachment": analisando os comentários de leitores do G1 sobre Jair Bolsonaro através de uma rede
+        de palavras</h1>
+    <h3>Artigo publicado na Revista Tecnologia e Sociedade.</h3>
+    <div class='row'>
+      <div class='user-card'>
+        <img class='user-img' src='https://loremflickr.com/128/128' />
+        <div class='user-info'>
+          <spam><b>Mr. Cat Meow</b></spam>
+          <spam>house pet and professional sleeper</spam>
+          <spam><i>em Outubro de 2022<i /></spam>
+        </div>
+      </div>
+      <div>
+        <div class='share'>
+          <a href=''><img class='social-medias' src='social-medias.png' /></a>
+          <a href=''>
+            <p>Compartilhar</p>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Começo do Conteúdo do Post -->
+
+  <div class='post-body'>
+    <p>
+      JavaScript é uma linguagem de programação bastante peculiar. Teve o seu primeiro protótipo desenvolvido em 10
+      dias, possui sintax e nome inspirados no Java, mas na verdade é mais parecido com um dialeto de Lisp (uma das
+      primeiras linguagens de programação funcional) do que qualquer outra coisa.
+    </p>
+    <p>
+      Por muito tempo, pessoas que estavam aprendendo JavaScript eram ensinadas a utilizar a linguagem conforme o
+      paradigma de programação orientada a objetos (OOP). No entanto, embora JS seja uma linguagem multiparadigmática,
+      é um pouco estranho utilizá-la como se fosse uma versão do Java que roda no browser, até porque, pra começo de
+      conversa, o recurso de classes (que na verdade é apenas syntax sugar para funções com estado interno) só surgiu
+      em 2015 com o advento do padrão ES6. Antes disso, classes, herança, decorators, interfaces e todo o resto que
+      vem junto com a OOP eram implementados utilizando funções e esticando aqui e ali os prototypes da linguagem.
+    </p>
+    <p>
+      Essa história de "programação funcional" (FP) parece ter sido popularizada na última década pelos frameworks e
+      linguagens que compilam para JS, tais como React, Elm, Reason e PureScript, que propõem o desenvolvimento de
+      front-ends à partir de um paradigma que mescla programação funcional com programação reativa orientada a
+      eventos.
+    </p>
+    <p>
+      No entanto, o que a gente chama de programação funcional em JS, na verdade se parece mais com uma série de
+      práticas que buscam diminuir a incidência de erros do desenvolvedor. Analisando códigos que se propõem a ser FP,
+      é possível observar as seguintes práticas recorrentes:
+    </p>
+    <ul>
+      <li>
+        Utilizar constantes (const) ao invés de variáveis (let, var). Variáveis são utilizadas caso não exista outra
+        opção, seja por motivos de performance ou versatilidade;
+      </li>
+      <li>
+        Preferência pelo pattern de composição ao invés de herança;
+      </li>
+      <li>
+        Realizar mutações somente quando necessário. É preferível uma função que retorne um novo valor ao invés de
+        alterar uma variável que já foi declarada (utilizar Array.concat ao invés de Array.push, por exemplo);
+      </li>
+      <li>
+        Entendimento de que o estado da aplicação é um ponto crítico para possíveis falhas e que deve ser centralizado
+        e gerenciado com bastante cuidado (Redux e Elm se destacam nesse sentido);
+      </li>
+      <li>
+        Evitar comandos de iteração de bloco (for, while) em favor de funções de alta-ordem (Array.map, Array.filter,
+        Array.reduce).
+      </li>
+    </ul>
+    <p>
+      Evidentemente, essas práticas realmente podem diminuir a incidência de erros e bugs no código. Separar o estado
+      da aplicação (estrutura de dados) das lógicas que operam sobre esses dados (as funções) é algo que já vem sendo
+      defendido há algum tempo (inclusive, desde o desenvolvimento do Haskell, lá nos anos 90). Deste modo, fica mais
+      fácil de depurar, criar funções testáveis e também de reaproveitar o código. Isso acontece porque o paradigma FP
+      faz com que toda a base de código seja uma grande composição de diversas funções, que simplesmente recebem dados
+      como parâmetro e retornam novos dados que foram processados à partir desses inputs. Observe o comparativo logo
+      abaixo.
+    </p>
+  </div>
+
+  <footer>
+    <div>
+      <h6>Blog desenvolvido durante o bootcamp Full Stack Infnet utilizando apenas HTML e CSS puro.</h6>
+    </div>
+  </footer>
+</body>
+
+</html>
